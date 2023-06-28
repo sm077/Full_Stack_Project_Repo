@@ -1,0 +1,21 @@
+<div class="container-fluid" id="login-main" style=" display:flex; align-items: center; justify-content: center; height: 100vh; ">
+  <div class="card" id="login-crd" style="width: 28rem; padding: 6rem; border-radius: 1rem;margin-top: 4rem; opacity: 0.7">
+    <h1>Login form</h1>
+    <hr>
+    <form (ngSubmit)="loginData()" >
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" [(ngModel)]="admin.email" aria-describedby="emailHelp">
+        </div>
+          
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password"
+          [(ngModel)]="admin.password">
+        </div>
+      
+        <button type="submit" class="btn btn-primary" >Submit</button>
+      </form>
+    </div>
+  </div>
+   

@@ -1,0 +1,11 @@
+#login-main{
+    background: rgb(2,0,36);
+background: linear-gradient(299deg, rgba(2,0,36,1) 0%, rgba(5,5,40,0.9557072829131653) 47%, rgba(23,68,215,0.756827731092437) 100%);}
+
+#login-crd{
+    background: rgb(182,35,110);
+background: linear-gradient(332deg, rgba(182,35,110,1) 0%, rgba(5,37,73,1) 100%);
+color: white;
+border: none;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

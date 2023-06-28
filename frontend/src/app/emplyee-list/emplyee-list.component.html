@@ -1,0 +1,31 @@
+
+
+
+<div class="emp-list">
+<h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; align-self: center; color: rgba(240, 255, 255, 0.687);">EMPLOYEE LIST</h2>
+<div class="main-list">
+<table class="table" id="tbl">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Id</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+<tbody>
+    <tr *ngFor="let employee of employees">
+        <td> {{employee.firstName}} </td>
+        <td> {{employee.lastName}} </td>
+        <td> {{employee.emailId}} </td>
+        <td>
+            <button (click)="updateEmployee(employee.id)" style="background-color: rgb(103, 200, 244);">Update</button>
+            <button (click)="employeeDetails(employee.id)" style="margin-left: 20px; background-color: rgb(174, 247, 185);">View</button>
+            <button (click)="deleteEmployee(employee.id)" style="margin-left: 20px; background-color: rgb(230, 75, 103);">Delete</button>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+</div>
+
